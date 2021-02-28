@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 def predict():
-    path = 'https://github.com/mirelaverebceanu/FIA/blob/main/linear_regression/apartmentComplexData.csv'
+    path = 'https://raw.githubusercontent.com/mirelaverebceanu/FIA/main/linear_regression/apartmentComplexData.csv'
     price_data = pd.read_csv(path)
 
     X = price_data[['column1','column2','complexAge', 'totalRooms', 'totalBedrooms', 'complexInhabitants', 'apartmentsNr','column8']]
